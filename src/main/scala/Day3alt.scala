@@ -32,7 +32,7 @@ object Day3Alt {
     val rowLength = arr(0).length
     var numOfOnes = new Array[Int](rowLength)
     for (j <- 0 to rowLength - 1) {
-      for (i <- 0 to length - 1) {
+      for (i <- 0 to arr.length - 1) {
         numOfOnes(j) = if (arr(i)(j) == '1') numOfOnes(j) + 1 else numOfOnes(j)
       }
     }
