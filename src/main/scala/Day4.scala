@@ -15,9 +15,9 @@ object Day4 {
   }
 
   def solve2(): Int = {
-      val filter = (board: Board) => !board.isBingo
-      val update = (prev: Int, curr: Int) => curr
-      draws.foldLeft((0, boards))(makeFoldFun(filter, update))._1
+    val filter = (board: Board) => !board.isBingo
+    val update = (prev: Int, curr: Int) => curr
+    draws.foldLeft((0, boards))(makeFoldFun(filter, update))._1
   }
 
   def makeFoldFun(filter: (Board => Boolean), update: (Int, Int) => Int) = {
