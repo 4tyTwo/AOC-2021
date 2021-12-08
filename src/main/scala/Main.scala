@@ -13,4 +13,6 @@ object Main extends App {
   println("Day 6 Part 2: " + Day6.solve2())
   println("Day 7 Part 1: " + Day7.solve1())
   println("Day 7 Part 2: " + Day7.solve2())
+  println("Day 8 Part 1: " + Day8.solve1())
+  println("Day 8 Part 2: " + Day8.solve2())
 }
